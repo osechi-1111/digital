@@ -4,105 +4,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>時間割・課題管理アプリ</title>
+  <title>デジタル掲示物アプリ</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <!-- ヘッダー -->
   <div class="header">
-    <h1 class="catchCopy">時間割・課題管理アプリβ版</h1>
+    <h1 class="catchCopy">デジタル掲示物アプリβ版</h1>
     <span>今日の日付</span>
     <h2 id="dateBox"></h2>
+    <a href="#" class="tab-link active" data-tab="tab1" id="homeTab">ホーム</a>
+    <a href="#" class="tab-link" data-tab="tab2" id="scheduleTab">時間割</a>
+    <a href="#" class="tab-link" data-tab="tab3" id="busTab">バス時刻表</a>
   </div>
-  <div class="eplain">
-    <p>このサイトは、未来航路の活動用に制作したものです。怪しいサイトではないので安心してください。</p>
+
+  <div class="tab-container">
+    <div class="tab-content" id="tab1">
+      <p>  このサイトは、未来航路の活動用に制作したものです。怪しいサイトではないので安心してください。</p>
+    </div>
+    <div class="tab-content" id="tab2">
+      <p>　この時間割は、「２A時間割」のスプレッドシートに準拠しています。
+      <br>　手動更新なので忘れていることもあるかもしれませんが、お許しください。
+      <br>  ※表は横スクロールできる場合があります。
+      </p>
+      <div class="usualSchedule">
+        <table>
+          <caption>通常の時間割</caption>
+          <tr>
+            <th colspan="2" class="periodBox">10/10(水)</th>
+            <th class="baggageRow">持ち物や内容</th>
+            <th class="homeworkRow">課題</th>
+          </tr>
+          <tr>
+            <td class="periodRow">１</td>
+            <td class="subjectRow">国語</td>
+            <td class="baggageRow">教科書　文法ノート</td>
+            <td class="homeworkRow"></td>
+          </tr>
+          <tr>
+            <td class="periodRow">２</td>
+            <td class="subjectRow">クリエイト</td>
+            <td class="baggageRow"></td>
+            <td class="homeworkRow"></td>
+          </tr>
+          <tr>
+            <td class="periodRow">３</td>
+            <td class="subjectRow">理科</td>
+            <td class="baggageRow">いつも　徹テキ　キーワーク</td>
+            <td class="homeworkRow"></td>
+          </tr>
+          <tr>
+            <td class="periodRow">４</td>
+            <td class="subjectRow">社会</td>
+            <td class="baggageRow">歴史</td>
+            <td class="homeworkRow"></td>
+          </tr>
+          <tr>
+            <td class="periodRow">５</td>
+            <td class="subjectRow">家庭科</td>
+            <td class="baggageRow">いつも　振り返りシート</td>
+            <td class="homeworkRow"></td>
+          </tr>
+          <tr>
+            <td class="periodRow">６</td>
+            <td class="subjectRow">英語</td>
+            <td class="baggageRow">単文×2　テスト１回　ジョイフル58~59</td>
+            <td class="homeworkRow"></td>
+          </tr>
+          <tr>
+            <td class="periodRow">７</td>
+            <td class="subjectRow"></td>
+            <td class="baggageRow"></td>
+            <td class="homeworkRow"></td>
+          </tr>
+        </table>
+      </div>
+      <!-- 週末課題 -->
+      <div class="weekendHomework">
+        <table>
+          <caption>週末課題</caption>
+          <tr>
+            <th>教科</th>
+            <th>課題内容</th>
+          </tr>
+          <tr>
+            <td class="subjectRow">国語</td>
+            <td class="contentRow">練テキ　p52〜57</td>
+          </tr>
+          <tr>
+            <td class="subjectRow">数学</td>
+            <td class="contentRow">α　リピート</td>
+          </tr>
+          <tr>
+            <td class="subjectRow">英語</td>
+            <td class="contentRow">練テキ週末課題p38~43（10月10日）</td>
+          </tr>
+          <tr>
+            <td class="subjectRow">理科</td>
+            <td class="contentRow">キーワーク　徹テキ（9月23日）</td>
+          </tr>
+          <tr>
+            <td class="subjectRow">社会</td>
+            <td class="contentRow"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="tab-content" id="tab3">
+    </div>
   </div>
-  <p>※表はスクロールできる可能性があります。</p>
   <!-- 通常の時間割 -->
-  <div class="usualSchedule">
-    <table>
-      <caption>通常の時間割</caption>
-      <tr>
-        <th colspan="2" class="periodBox">9/26(火)</th>
-        <th class="baggageRow">持ち物や内容</th>
-        <th class="homeworkRow">課題</th>
-      </tr>
-      <tr>
-        <td class="periodRow">１</td>
-        <td class="subjectRow">食育講演会</td>
-        <td class="baggageRow">あ</td>
-        <td class="homeworkRow">ああああああああああああああああああああああああ</td>
-      </tr>
-      <tr>
-        <td class="periodRow">２</td>
-        <td class="subjectRow">数学</td>
-        <td class="baggageRow"></td>
-        <td class="homeworkRow"></td>
-      </tr>
-      <tr>
-        <td class="periodRow">３</td>
-        <td class="subjectRow">理科</td>
-        <td class="baggageRow"></td>
-        <td class="homeworkRow"></td>
-      </tr>
-      <tr>
-        <td class="periodRow">４</td>
-        <td class="subjectRow">社会</td>
-        <td class="baggageRow"></td>
-        <td class="homeworkRow"></td>
-      </tr>
-      <tr>
-        <td>５</td>
-        <td>英語</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>６</td>
-        <td>総合</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>７</td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-  </div>
-  <!-- 週末課題 -->
-  <div class="weekendHomework">
-    <table>
-      <caption>週末課題</caption>
-      <tr>
-        <th>教科</th>
-        <th>課題内容</th>
-      </tr>
-      <tr>
-        <td class="subjectRow">国語</td>
-        <td>国語ああああああああああああああああああああああああああああああああああああああああああああ</td>
-      </tr>
-      <tr>
-        <td class="subjectRow">数学</td>
-        <td>数学</td>
-      </tr>
-      <tr>
-        <td class="subjectRow">英語</td>
-        <td>理科</td>
-      </tr>
-      <tr>
-        <td class="subjectRow">理科</td>
-        <td>社会</td>
-      </tr>
-      <tr>
-        <td class="subjectRow">社会</td>
-        <td>英語</td>
-      </tr>
-    </table>
-  </div>
+  
   <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
   
 </html>
