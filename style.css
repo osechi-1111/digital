@@ -5,9 +5,11 @@ html {
 
 body{
   margin: 0;
-  padding: 60px 5px 5px 5px;
+  padding-bottom: 5px;
   background-color: #f0f2f4;
 }
+
+/* ヘッダー */
 
 .header{
   position: fixed;
@@ -15,7 +17,8 @@ body{
   left: 0;
   background-color: orange;
   width: 100%;
-  height: 50px;
+  height: 80px;
+  z-index: 2;
 }
 
 .header span{
@@ -51,6 +54,53 @@ body{
   font-size: 20px;
   font-weight: bold;
 }
+
+/* タブ基本設定 */
+
+.tab-link {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0;
+  height: 25px;
+  width: calc(100% / 3);
+  position: absolute;
+  bottom: 0;
+}
+
+#homeTab{
+  left: 0;
+}
+
+#scheduleTab{
+  left: calc(100% / 3);
+}
+
+#busTab{
+  left: calc(100% / 3 * 2);
+}
+
+.tab-link.active {
+  background-color: red;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: calc(100% - 10px);
+  padding: 5px;
+  height: 100%;
+  z-index: 1;
+}
+
+/* テーブルなど基本設定 */
 
 p{
   margin: 0;
@@ -98,7 +148,6 @@ caption{
 }
 
 /* 週末課題 */
-
 .weekendHomework{
   margin: 0;
   padding: 0;
