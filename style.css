@@ -151,20 +151,7 @@ caption{
 /* A4フォーマット */
 
 .A4Format{
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.A4Paper{
-  background-color: #ffffff;;
-  width: auto;
-  height: 90%;
-  aspect-ratio: 1 / 1.41421356;
-}
-
-.busTitle{
-  text-align: center;
-  font-size: small;
+  width: 210px;
+  height: 297px;
+  background-color: #ffffff;
 }
