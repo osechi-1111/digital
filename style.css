@@ -5,7 +5,6 @@ html {
 
 body{
   margin: 0;
-  padding-bottom: 5px;
   background-color: #f0f2f4;
 }
 
@@ -51,7 +50,7 @@ body{
   position: absolute;
   top: 5px;
   right: 5px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -73,15 +72,23 @@ body{
   left: 0;
 }
 
-#scheduleTab{
+#busTab{
   left: calc(100% / 3);
 }
 
-#busTab{
+#EnglishTab{
   left: calc(100% / 3 * 2);
 }
 
 .tab-link.active {
+  background-color: red;
+}
+
+.tab-link:hover{
+  background-color: #fe8686;
+}
+
+.tab-link.active:hover{
   background-color: red;
 }
 
@@ -96,8 +103,23 @@ body{
   left: 0;
   width: calc(100% - 10px);
   padding: 5px;
-  height: 100%;
+  height: calc(100% - 90px);
   z-index: 1;
+  background-color: #f0f2f4;
+}
+
+/* ホーム */
+
+.homeTitle{
+  margin: -5px -5px 0 -5px;
+  background-color: #6c9bd2;
+  color: #ffffff;
+  font-size: x-large;
+  padding: 5px;
+}
+
+.headLine{
+  margin: 10px 3px 3px 3px;
 }
 
 /* テーブルなど基本設定 */
@@ -124,34 +146,25 @@ caption{
   font-size: x-large;
 }
 
-/* 通常の時間割 */
+/* バス時刻表 */
 
-.usualSchedule{
-  margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-  overflow-x: auto;
-  white-space: nowrap;
+/* A4フォーマット */
+
+.A4Format{
   width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
 }
 
-.periodBox{
-  width: 100px;
+.A4Paper{
+  background-color: #ffffff;;
+  width: auto;
+  height: 90%;
+  aspect-ratio: 1 / 1.41421356;
 }
 
-.periodRow{
-  width: 20px;
-}
-
-.subjectRow{
-  width: 80px;
-}
-
-/* 週末課題 */
-.weekendHomework{
-  margin: 0;
-  padding: 0;
-  overflow-x: auto;
-  white-space: nowrap;
-  width: 100%;
+.busTitle{
+  text-align: center;
+  font-size: small;
 }
