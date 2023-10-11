@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
+  
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -15,115 +15,41 @@
     <span>今日の日付</span>
     <h2 id="dateBox"></h2>
     <a href="#" class="tab-link active" data-tab="tab1" id="homeTab">ホーム</a>
-    <a href="#" class="tab-link" data-tab="tab2" id="scheduleTab">時間割</a>
-    <a href="#" class="tab-link" data-tab="tab3" id="busTab">バス時刻表</a>
+    <a href="#" class="tab-link" data-tab="tab2" id="busTab">バス時刻表</a>
+    <a href="#" class="tab-link" data-tab="tab3" id="EnglishTab">今日の五文</a>
   </div>
 
   <div class="tab-container">
     <div class="tab-content" id="tab1">
-      <p>  このサイトは、未来航路の活動用に制作したものです。怪しいサイトではないので安心してください。</p>
-    </div>
-    <div class="tab-content" id="tab2">
-      <p>　この時間割は、「２A時間割」のスプレッドシートに準拠しています。
-      <br>　手動更新なので忘れていることもあるかもしれませんが、お許しください。
-      <br>  ※表は横スクロールできる場合があります。
+      <h1 class="homeTitle">「英語の五文がどれかわからない！」って？このサイトがあれば大丈夫。</h1>
+      <h2 class="headLine">最初に</h2>
+      <p>　このサイトは、未来航路の活動用に制作したものです（Cゼミ５３グループ）。怪しいサイトではないので安心してください。
+      <br>　基本的にはスマホ推奨のサイトですが、PCやタブレットでも一応動きます（レイアウトが崩れる場合があります）。
+      <br>　サイトの更新時期は未定なので、できるだけサイトを更新してもらえると助かります。追加してほしい機能があれば三宅まで。
       </p>
-      <div class="usualSchedule">
-        <table>
-          <caption>通常の時間割</caption>
-          <tr>
-            <th colspan="2" class="periodBox">10/10(水)</th>
-            <th class="baggageRow">持ち物や内容</th>
-            <th class="homeworkRow">課題</th>
-          </tr>
-          <tr>
-            <td class="periodRow">１</td>
-            <td class="subjectRow">国語</td>
-            <td class="baggageRow">教科書　文法ノート</td>
-            <td class="homeworkRow"></td>
-          </tr>
-          <tr>
-            <td class="periodRow">２</td>
-            <td class="subjectRow">クリエイト</td>
-            <td class="baggageRow"></td>
-            <td class="homeworkRow"></td>
-          </tr>
-          <tr>
-            <td class="periodRow">３</td>
-            <td class="subjectRow">理科</td>
-            <td class="baggageRow">いつも　徹テキ　キーワーク</td>
-            <td class="homeworkRow"></td>
-          </tr>
-          <tr>
-            <td class="periodRow">４</td>
-            <td class="subjectRow">社会</td>
-            <td class="baggageRow">歴史</td>
-            <td class="homeworkRow"></td>
-          </tr>
-          <tr>
-            <td class="periodRow">５</td>
-            <td class="subjectRow">家庭科</td>
-            <td class="baggageRow">いつも　振り返りシート</td>
-            <td class="homeworkRow"></td>
-          </tr>
-          <tr>
-            <td class="periodRow">６</td>
-            <td class="subjectRow">英語</td>
-            <td class="baggageRow">単文×2　テスト１回　ジョイフル58~59</td>
-            <td class="homeworkRow"></td>
-          </tr>
-          <tr>
-            <td class="periodRow">７</td>
-            <td class="subjectRow"></td>
-            <td class="baggageRow"></td>
-            <td class="homeworkRow"></td>
-          </tr>
-        </table>
-      </div>
-      <!-- 週末課題 -->
-      <div class="weekendHomework">
-        <table>
-          <caption>週末課題</caption>
-          <tr>
-            <th>教科</th>
-            <th>課題内容</th>
-          </tr>
-          <tr>
-            <td class="subjectRow">国語</td>
-            <td class="contentRow">練テキ　p52〜57</td>
-          </tr>
-          <tr>
-            <td class="subjectRow">数学</td>
-            <td class="contentRow">α　リピート</td>
-          </tr>
-          <tr>
-            <td class="subjectRow">英語</td>
-            <td class="contentRow">練テキ週末課題p38~43（10月10日）</td>
-          </tr>
-          <tr>
-            <td class="subjectRow">理科</td>
-            <td class="contentRow">キーワーク　徹テキ（9月23日）</td>
-          </tr>
-          <tr>
-            <td class="subjectRow">社会</td>
-            <td class="contentRow"></td>
-          </tr>
-        </table>
+      <h2 class="headLine">お知らせ</h2>
+      <p></p>
+    </div>
+    
+    <div class="tab-content" id="tab2">
+      <div class="A4Format">
+        <div class="A4Paper">
+          <h1 class="busTitle">バス時刻表</h1>
+        </div>
       </div>
     </div>
     <div class="tab-content" id="tab3">
+      <h2 class="headLine">Unit 4-3</h2>
+      <p>①I can't finish washing in such a short time.</p>
+      <p>②We should take our showers quickly.</p>
+      <p>③My host father is good at cooking.</p>
+      <p>④Everyone enjoys his dinners, but there's one problem.</p>
+      <p>⑤He puts too much food on my plate.</p>
     </div>
   </div>
-  <!-- 通常の時間割 -->
   
   <script src="script.js"></script>
-
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  
 </body>
   
 </html>
