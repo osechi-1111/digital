@@ -1,11 +1,12 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: #fffaf4;
 }
 
 body{
   margin: 0;
-  background-color: #f0f2f4;
+  background-color: #fffaf4;
 }
 
 /* ヘッダー */
@@ -14,7 +15,7 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: orange;
+  background-color: #d0917c;
   width: 100%;
   height: 80px;
   z-index: 2;
@@ -63,7 +64,7 @@ body{
   color: #ffffff;
   margin: 0;
   height: 25px;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   position: absolute;
   bottom: 0;
 }
@@ -72,24 +73,28 @@ body{
   left: 0;
 }
 
-#busTab{
-  left: calc(100% / 3);
+#scheduleTab{
+  left: calc(100% / 4);
 }
 
 #EnglishTab{
-  left: calc(100% / 3 * 2);
+  left: calc(100% / 4 * 2);
+}
+
+#classPaperTab{
+  left: calc(100% / 4 * 3);
 }
 
 .tab-link.active {
-  background-color: red;
+  background-color: #d67171;
 }
 
 .tab-link:hover{
-  background-color: #fe8686;
+  background-color: #e68484;
 }
 
 .tab-link.active:hover{
-  background-color: red;
+  background-color: #d67171;
 }
 
 .tab-content {
@@ -103,33 +108,39 @@ body{
   left: 0;
   width: calc(100% - 10px);
   padding: 5px;
-  height: calc(100% - 90px);
+  height: 100%;
   z-index: 1;
-  background-color: #f0f2f4;
+  background-color: #fffaf4;
 }
 
 /* ホーム */
 
 .homeTitle{
   margin: -5px -5px 0 -5px;
-  background-color: #6c9bd2;
-  color: #ffffff;
+  background-color: #f4efe9;
+  color: #565656;
   font-size: x-large;
   padding: 5px;
+  text-align: center;
+  font-weight: bold;
 }
 
-.headLine{
-  margin: 10px 3px 3px 3px;
-}
-
-/* テーブルなど基本設定 */
+/* テーブルなど諸設定 */
 
 p{
   margin: 0;
+  color: #707070;
 }
 
-tr,th,td{
-  border: solid 1px #000000;
+tr,td{
+  border: solid 1px #565656;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+th{
+  color: #565656;
+  border: solid 1px #565656;
   text-align: center;
   border-collapse: collapse;
 }
@@ -137,21 +148,55 @@ tr,th,td{
 table{
   width: 100%;
   margin: 0;
-  border: solid 2px #000000;
+  border: solid 2px #565656;
   text-align: center;
   border-collapse: collapse;
+  color: #707070;
+  background-color: #fffaf4;
 }
 
 caption{
   font-size: x-large;
+  color: #565656;
 }
-
-/* バス時刻表 */
 
 /* A4フォーマット */
 
-.A4Format{
-  width: 210px;
-  height: 297px;
+.A4Paper{
+  width: 315px;
+  height: 445.5px;
   background-color: #ffffff;
+  margin-left: calc((100% - 315px) / 2);
+  margin-top: 10px;
 }
+
+/* ヘッドライン */
+
+.headLine{
+  border-left: 3px solid #d17456;
+  padding-left: 10px;
+  margin: 10px 3px 3px 3px;
+  color: #565656;
+}
+
+/* ニュースボックス */
+
+.newsBox{
+  width: calc(100% - 15px);
+  height: auto;
+  border: 3px solid #736356;
+  padding: 5px;
+  margin: 0;
+}
+
+.newsBoxTitle{
+  margin: -5px 0 0 -5px;
+  background-color: #736356;
+  width: calc(100% + 10px);
+  height: 30px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* バス時刻表 */
