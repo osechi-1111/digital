@@ -40,3 +40,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // 最初のタブをアクティブに設定
     tabLinks[0].click();
 });
+
+// 日付自動入力処理
+let dayBoxes = document.getElementsByClassName("dayBox");
+let firstDayBox = document.getElementById("firstDayBox").innerHTML;
+let firstDayBoxNumber = weekDay.indexOf(firstDayBox);
+let dayNumber = firstDayBoxNumber;
+
+for(let i = 0; i < dayBoxes.length; i++) {
+  dayNumber++;
+  if(dayNumber != 7){
+    dayBoxes[i].innerHTML = weekDay[dayNumber];
+  }else{
+    dayNumber = 0;
+    dayBoxes[i].innerHTML = weekDay[dayNumber];
+  }
+}
