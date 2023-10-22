@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>デジタル掲示物アプリ</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style/style.css" rel="stylesheet" type="text/css" />
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -33,6 +34,9 @@
       <br>　基本的にはスマホ推奨のサイトですが、PCやタブレットでも一応動きます（レイアウトが崩れる場合があります）。
       <br>　サイトの更新時期は未定なので、できるだけサイトを更新してもらえると助かります。追加してほしい機能があれば三宅まで。
       </p>
+      <h2 class="headLine">アプリケーション相互運用性</h2>
+      <p>　本サイトはPWAに対応しています。PWA(Progressive Web Apps)とは、ウェブサイトを擬似アプリケーションとして利用する技術のことです。
+      <br>　サイトをPWAとして利用する方法は、ブラウザごとに異なります。以下に、各ブラウザごとの本サイトを擬似アプリケーションとして利用する方法を記します。</p>
       <h2 class="headLine">お知らせ</h2>
       <p></p>
     </div>
@@ -46,6 +50,16 @@
     </div>
     
     <div class="tab-content" id="tab3">
+      <h2 class="headLine">メニュー</h2>
+      <div class="menu">
+        <h1 class="menuTitle">メニュー</h1>
+        <ul>
+          <a href="#English">
+            <li>英語の五文</li>
+          </a>
+        </ul>
+      </div>
+      <h2 class="headLine" id="English">英語の五文</h2>
       <div class="newsBox">
         <h1 class="newsBoxTitle">今日の五文</h1>
         <h2 class="headLine">Unit 4-3</h2>
@@ -99,6 +113,7 @@
         <p>④Everyone enjoys his dinners, but there's one problem.</p>
         <p>⑤He puts too much food on my plate.</p>
       </div>
+      <h2 class="headLine">クイズ</h2>
     </div>
     <div class="tab-content" id="tab4">
       <h2 class="headLine">メニュー</h2>
@@ -403,137 +418,151 @@
         <table>
           <caption>中尾海裕 先生</caption>
           <tr>
-            <td>miyuu_nakao@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">miyuu_nakao@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>荻野郁弥 先生</caption>
           <tr>
-            <td>fumiya_ogino@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">fumiya_ogino@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>岩月理恵 先生</caption>
           <tr>
-            <td>rie_iwatsuki@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">rie_iwatsuki@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>平田周吾 先生</caption>
           <tr>
-            <td>shiyuugo_hirata@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">shiyuugo_hirata@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>坪井晶広 先生</caption>
           <tr>
-            <td>akihiro_tsuboi@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">akihiro_tsuboi@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>守時和輝 先生</caption>
           <tr>
-            <td>kazuki_moritoki@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">kazuki_moritoki@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>犬束秀一 先生</caption>
           <tr>
-            <td>shiyuuichi_inutsuka@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">shiyuuichi_inutsuka@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>福永義弘 先生</caption>
           <tr>
-            <td>yoshihiro_fukunaga@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">yoshihiro_fukunaga@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>操山高校</caption>
           <tr>
-            <td>sozan01@pref.okayama.jp</td>
+            <td class="copyElement">sozan01@pref.okayama.jp</td>
           </tr>
         </table>
         <table>
           <caption>81_21期生</caption>
           <tr>
-            <td>81_sozan21@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">81_sozan21@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>81_R4_1A</caption>
           <tr>
-            <td>81_sozan_r4_1a@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">81_sozan_r4_1a@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>81_R4_1B</caption>
           <tr>
-            <td>81_sozan_r4_1b@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">81_sozan_r4_1b@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>81_R4_1C</caption>
           <tr>
-            <td>81_sozan_r4_1c@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">81_sozan_r4_1c@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>81_岡山操山中学校全生徒【基本グループ】</caption>
           <tr>
-            <td>81_sozan-jhs-students@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">81_sozan-jhs-students@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>81_岡山操山中学校全教職員【基本グループ】</caption>
           <tr>
-            <td>81_sozan-jhs-teachers@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">81_sozan-jhs-teachers@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>岡山操山中学校管理者01</caption>
           <tr>
-            <td>sozan-jhs-admin01@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">sozan-jhs-admin01@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>岡山操山中学校管理者02</caption>
           <tr>
-            <td>sozan-jhs-admin02@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">sozan-jhs-admin02@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>岡山操山中学校管理者03</caption>
           <tr>
-            <td>sozan-jhs-admin03@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">sozan-jhs-admin03@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>02_岡山操山高等学校全教職員【基本グループ】</caption>
           <tr>
-            <td>02_sozan-teachers@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">02_sozan-teachers@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>02_岡山操山高等学校全生徒【基本グループ】</caption>
           <tr>
-            <td>02_sozan-students@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">02_sozan-students@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
         <table>
           <caption>03_岡山操山高等学校（通信制）全教職員【基本グループ】</caption>
           <tr>
-            <td>03_sozan-c-teachers@gse.okayama-c.ed.jp</td>
+            <td class="copyElement">03_sozan-c-teachers@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
 　　　　　<h2>1年・・・812322r</h2>
 　　　　　<h2>2年・・・812221b</h2>
       </div>
+      <div id="copyMessageBox">
+        <p class="copyMessage">コピー完了！[<span id="copiedMailaddress">あああ</span>]</p>
+      </div>
     </div>
   </div>
   
-  <script src="script.js"></script>
-  
+  <script src="src/script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/digital/sw.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+
 </body>
   
 </html>
