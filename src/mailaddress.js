@@ -93,8 +93,6 @@ function studentEmail(){
   }
 }
 
-
-
 // サイト表示時に関数を一度実行
 studentEmail();
 
