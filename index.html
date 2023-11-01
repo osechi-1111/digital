@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>デジタル掲示物アプリ</title>
-  <link href="style/style.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="manifest" href="manifest.json">
 </head>
 
@@ -32,20 +32,42 @@
       <h2 class="headLine">最初に</h2>
       <p>　このサイトは、未来航路の活動用に制作したものです（Cゼミ５３グループ）。怪しいサイトではないので安心してください。
       <br>　基本的にはスマホ推奨のサイトですが、PCやタブレットでも一応動きます（レイアウトが崩れる場合があります）。
-      <br>　サイトの更新時期は未定なので、できるだけサイトを更新してもらえると助かります。追加してほしい機能があれば三宅まで。
+      <br>　サイトの更新時期は未定なので、できるだけサイトを更新してもらえると助かります。追加してほしい機能、バグ、修正点があれば三宅まで。
       </p>
       <h2 class="headLine">アプリケーション相互運用性</h2>
-      <p>　本サイトはPWAに対応しています。PWA(Progressive Web Apps)とは、ウェブサイトを擬似アプリケーションとして利用する技術のことです。
-      <br>　サイトをPWAとして利用する方法は、ブラウザごとに異なります。以下に、各ブラウザごとの本サイトを擬似アプリケーションとして利用する方法を記します。</p>
-      <h2 class="headLine">お知らせ</h2>
-      <p></p>
+      <p>　本サイトはPWAに対応しています。PWA(Progressive Web Apps)とは、ウェブサイトをアプリケーションとして利用する技術のことです（アプリを直接端末にインストールするのではなく、ユーザーが使用しているブラウザを介して端末にインストールされます）。
+      <br>　サイトをPWAとして利用する方法はデバイス、ブラウザごとに異なります。以下に、各デバイスごとの本サイトを擬似アプリケーションとして利用する方法を記します。ブラウザはChromeを使用しているとします。</p>
+      <div class="newsBox">
+        <h1 class="newsBoxTitle">iPhone / iPad</h1>
+        <p>①サイトを開く
+        <br>②画面下部の共有ボタン（□から上矢印が出てるみたいなボタン）をクリック
+        <br>③出てきたダイアログを下にスクロールし、「ホーム画面に追加」をクリック
+        <br>④任意の名前を入力し、追加
+        <br>⑤ホーム画面に「デジタル掲示板」のロゴが出ていれば成功です</p>
+      </div>
+      <div class="newsBox">
+        <h1 class="newsBoxTitle">パソコン</h1>
+        <p>①サイトを開く
+        <br>②画面上部のアドレスバー（URLが書いてあるとこ）の右にある、インストールをクリック
+        <br>③インストールが完了すれば、成功です</p>
+      </div>
+      <div class="newsBox">
+        <h1 class="newsBoxTitle">Android</h1>
+        <p>①サイトを開く
+        <br>②インストールをクリック
+        <br>③ホーム画面に表示されれば成功です</p>
+      </div>
+      <p>　もし、不明点などがありましたら、お気軽にお尋ねください。多分答えます。</p>
+      <h2 class="headLine">ニュース</h2>
+      <ul class="newsList">
+      </ul>
     </div>
 
     <div class="tab-content" id="tab2">
       <h2 class="headLine">時間割・課題・週末課題</h2>
       <p>　この時間割は、スプレッドシートを直接埋め込んだものです。</p>
       <p>　スプレッドシートの埋め込みが見れなかったりする人は以下のボタンを押してください。対象のスプレッドシートに直接飛びます。</p>
-      <a href="https://docs.google.com/spreadsheets/d/1yLWe6AD1cDkggYthUu9YZbxUf5GK3as7HVVq-TQZer4" target="_blank">開いてみ飛ぶぞ</a>
+      <a href="https://docs.google.com/spreadsheets/d/1yLWe6AD1cDkggYthUu9YZbxUf5GK3as7HVVq-TQZer4" target="_blank">押してみな飛ぶぞ</a>
       <iframe src="https://docs.google.com/spreadsheets/d/1yLWe6AD1cDkggYthUu9YZbxUf5GK3as7HVVq-TQZer4" width="100%" height="1000px"></iframe>
     </div>
     
@@ -60,16 +82,11 @@
         </ul>
       </div>
       <h2 class="headLine" id="English">英語の五文</h2>
-      <div class="newsBox">
+      <div class="newsBox" id="EnglishNewsBox">
         <h1 class="newsBoxTitle">今日の五文</h1>
-        <h2 class="headLine">Unit 4-3</h2>
-        <p>①I can't finish washing in such a short time.</p>
-        <p>②We should take our showers quickly.</p>
-        <p>③My host father is good at cooking.</p>
-        <p>④Everyone enjoys his dinners, but there's one problem.</p>
-        <p>⑤He puts too much food on my plate.</p>
+        <h2 class="headLine" id="EnglishHeadLine"></h2>
       </div>
-      <div class="newsBox">
+      <div class="newsBox" id="testEnglishNewsBox">
         <h1 class="newsBoxTitle">テスト範囲</h1>
         <h2 class="headLine">Unit 4-3</h2>
         <p>①I can't finish washing in such a short time.</p>
@@ -113,7 +130,6 @@
         <p>④Everyone enjoys his dinners, but there's one problem.</p>
         <p>⑤He puts too much food on my plate.</p>
       </div>
-      <h2 class="headLine">クイズ</h2>
     </div>
     <div class="tab-content" id="tab4">
       <h2 class="headLine">メニュー</h2>
@@ -541,16 +557,30 @@
             <td class="copyElement">03_sozan-c-teachers@gse.okayama-c.ed.jp</td>
           </tr>
         </table>
-　　　　　<h2>1年・・・812322r</h2>
-　　　　　<h2>2年・・・812221b</h2>
+        <table class="gradeChange">
+          <caption>学年切り替え</caption>
+          <tr>
+            <td id="firstGrade">１年</td>
+            <td id="secondGrade">２年</td>
+            <td id="thirdGrade">３年</td>
+          </tr>
+        </table>
+        <table id="classA">
+        </table>
+        <table id="classB">
+        </table>
+        <table id="classC">
+        </table>
       </div>
       <div id="copyMessageBox">
         <p class="copyMessage">コピー完了！[<span id="copiedMailaddress">あああ</span>]</p>
       </div>
     </div>
   </div>
-  
-  <script src="src/script.js"></script>
+  <Script src="src/dataFetch.js"></script>
+  <script src="src/date.js"></script>
+  <script src="src/mailaddress.js"></script>
+  <script src="src/tab.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -562,7 +592,7 @@
       });
     }
   </script>
-
+  
 </body>
   
 </html>
