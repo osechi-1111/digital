@@ -1,4 +1,4 @@
-// 今日の五文
+// 英語の五文
 fetch('data/EnglishData.txt')
 .then(response => response.text())
 .then(data => {
@@ -44,7 +44,11 @@ fetch('data/EnglishData.txt')
       createHeadLine.classList.add("headLine");
       createHeadLine.textContent = lines[lineNumber];
       testEnglishNewsBox.appendChild(createHeadLine);
-      for (let i = lineNumber + 1; i < lineNumber + 6; i++) {
+
+      let lineNumberP1 = lineNumber + 1;
+      let lineNumberP6 = lineNumber + 6;
+      
+      for (let i = lineNumberP1; i < lineNumberP6; i++) {
         const lineData = lines[i];
 
         const paragraph = document.createElement("p");
