@@ -262,6 +262,32 @@ caption{
   color: #707070;
 }
 
+/* 時間割 */
+.button{
+  width: 180px;
+  height: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  background-color: #736357;
+  border-radius: 10px;
+  padding: 5px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.button:hover{
+  background-color: #a08f83;
+}
+
+iframe{
+  margin-top: 10px;
+  width: calc(100% - 5px);
+  height: 100%;
+  border: 2px solid #736357;
+}
+
 /* コピー処理用 */
 
 .copyElement{
