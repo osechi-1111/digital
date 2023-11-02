@@ -1,3 +1,46 @@
+// 最初のメアド
+fetch('data/mailaddress.json')
+.then(response => response.json())
+.then(data => {
+  // 子要素を挿入する位置
+  var dataCount = 1;
+  
+  // JSONデータが読み込まれた後、すべてのデータを表示
+  for (var key in data) {
+    if (data.hasOwnProperty(key)) {
+      let mailaddressNewsBox = document.getElementById("mailaddressNewsBox");
+      let createTable = document.createElement("table");
+      let createCaption = document.createElement("caption");
+      let createTr = document.createElement("tr");
+      let createTd = document.createElement("td");
+      createCaption.textContent = key;
+      createTd.textContent = data[key];
+      createTd.classList.add("copyElement");
+      createTable.appendChild(createCaption);
+      createTr.appendChild(createTd);
+      createTable.appendChild(createTr);
+      mailaddressNewsBox.insertBefore(createTable, mailaddressNewsBox.children[dataCount]);
+      dataCount++;
+    }
+  }
+
+  // コピー処理
+  for (var i = 0; i < copyElements.length; i++) {
+    copyElements[i].addEventListener("click", function() {
+      let copyText = this.textContent;
+      let copyMessageBox = document.getElementById('copyMessageBox');
+      let copiedMailaddress = document.getElementById("copiedMailaddress");
+      copiedMailaddress.innerHTML = copyText;
+      navigator.clipboard.writeText(copyText);
+      copyMessageBox.style.display = 'block';
+      setTimeout( ()=> {
+        copyMessageBox.style.display = 'none';
+      },3000);
+    });
+  }
+})
+.catch(error => console.error('エラー:', error));
+
 // 学年切り替え処理
 let firstGrade = document.getElementById("firstGrade");
 let secondGrade = document.getElementById("secondGrade");
