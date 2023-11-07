@@ -55,6 +55,30 @@ body{
   font-weight: bold;
 }
 
+/* 更新ボタン */
+#reloadButton{
+  position: fixed;
+  right: 5px;
+  top: 85px;
+  z-index: 2;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #d0917c;
+  padding: 1px 1px 0 0;
+  cursor: pointer;
+}
+
+#reloadButton img{
+  width: 25px;
+  height: 25px;
+}
+
+#reloadButton:hover{
+  background-color: #d6a695;
+}
+
 /* タブ基本設定 */
 
 .tab-link {
